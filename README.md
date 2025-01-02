@@ -5,16 +5,16 @@
 ## Features
 
 - **Date-Specific Playlist Generation**: 
-  - Enter a date to fetch the Billboard Hot 100 chart for that week and create a corresponding Spotify playlist.
+  Enter a date to fetch the Billboard Hot 100 chart for that week and create a corresponding Spotify playlist.
   
 - **Web Scraping with BeautifulSoup**: 
-  - Extracts song titles and artists from Billboard's website using the BeautifulSoup library.
+ Extracts song titles and artists from Billboard's website using the BeautifulSoup library.
   
 - **Spotify API Integration via Spotipy**: 
-  - Authenticates and interacts with the Spotify API to search for songs and create playlists directly in the user's Spotify account.
+  Authenticates and interacts with the Spotify API to search for songs and create playlists directly in the user's Spotify account.
   
 - **Data Persistence**: 
-  - Saves detailed song data, including metadata and Spotify URIs, in a text file for future reference.
+  Saves detailed song data, including metadata and Spotify URIs, in a text file for future reference.
 
 ## Dependencies
 
