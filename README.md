@@ -1,32 +1,31 @@
-This project is a Billboard Hot 100 Spotify Playlist Generator that allows users to travel back in time and generate Spotify playlists for specific dates based on the Billboard Hot 100 chart. It combines web scraping, data extraction, and Spotify API integration to create a seamless experience for music enthusiasts.
+# Spotify Playlist Maker
 
-Key Features:
-Date-Based Playlist Creation:
+**Spotify Playlist Maker** is a Python-based application that generates Spotify playlists based on the Billboard Hot 100 charts for a specified date. By combining web scraping techniques with the Spotify API, it allows users to recreate historical music charts as Spotify playlists.
 
-Input any date after August 4, 1958, to fetch the Billboard Hot 100 chart for that week.
-Automatically generates a Spotify playlist for the selected chart.
-Web Scraping:
+## Features
 
-Utilizes BeautifulSoup to scrape song titles from the Billboard website.
-Spotify API Integration:
+- **Date-Specific Playlist Generation**: 
+  - Enter a date to fetch the Billboard Hot 100 chart for that week and create a corresponding Spotify playlist.
+  
+- **Web Scraping with BeautifulSoup**: 
+  - Extracts song titles and artists from Billboard's website using the BeautifulSoup library.
+  
+- **Spotify API Integration via Spotipy**: 
+  - Authenticates and interacts with the Spotify API to search for songs and create playlists directly in the user's Spotify account.
+  
+- **Data Persistence**: 
+  - Saves detailed song data, including metadata and Spotify URIs, in a text file for future reference.
 
-Authenticates using Spotipy to interact with Spotify's API.
-Searches for songs on Spotify, retrieves metadata, and adds tracks to a private playlist.
-Error Handling:
+## Dependencies
 
-Ensures valid date input and handles cases where songs are not found on Spotify.
-Output:
+- **Python 3.x**: Ensure Python is installed on your system.
+- **BeautifulSoup4**: For web scraping.
+- **Spotipy**: A lightweight Python library for the Spotify Web API.
+- **Requests**: For making HTTP requests.
+- **dotenv**: To manage environment variables.
 
-Generates a text file with details of all songs, including names, artists, and Spotify URLs.
-Provides the Spotify playlist URL for easy sharing and access.
-Technical Highlights:
-Python Libraries:
-BeautifulSoup for web scraping.
-Spotipy for Spotify API interaction.
-requests for HTTP requests.
-Dynamic Data Handling:
-Automatically calculates the most recent Friday as the latest valid date for charts.
-User-Friendly Interface:
-Prompts for input and provides clear feedback for invalid dates or missing data.
-This project is a robust example of combining web scraping with API integration to solve real-world problems and provide a rich user experience.
+## Notes
 
+- The application relies on the availability and accuracy of the Billboard website and the Spotify catalog.
+- Some songs from older charts may not be available on Spotify.
+- Ensure your Spotify account has the necessary permissions to create playlists.
